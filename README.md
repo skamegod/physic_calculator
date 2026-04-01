@@ -16,5 +16,6 @@
 
 ## Для сборки:
 Windows: x86_64-w64-mingw32-gcc main.c -o physic.exe -lm -static
+
 Linux(Наличие gcc и make): make
                           ./physic
