@@ -1,9 +1,15 @@
 # Physic Calculator (CLI)
 
-A simple command-line physics calculator that computes common physics formulas.
+A simple physics calculator with both C and Python command-line versions.
+
+## Project versions
+
+- `c_version/` — the original C implementation with 10 physics formulas.
+- `python_version/` — a Python implementation with more menu options and additional formulas.
 
 ## Supported formulas
-This program can calculate values for the following physics equations:
+
+### Common formulas in both versions
 
 1.  **Rest energy (Einstein):** E = mc²
 2.  **Ohm's law:** I = U / R
@@ -16,22 +22,41 @@ This program can calculate values for the following physics equations:
 9.  **Newton's second law:** F = m · a
 10. **Acceleration:** a = (v - v₀) / t
 
+### Additional formulas in the Python version
+
+11. **Impulse:** J = m · Δv
+12. **Moment of force:** M = F · d
+
 ## Build and run
 
-### Linux
+### C version (Linux)
 Make sure `gcc` and `make` are installed, then run:
 
 ```bash
+cd c_version
 make
 ./physic
 ```
 
-### Windows
+### C version (Windows)
 Use the MinGW compiler to build the executable:
 
 ```bash
+cd c_version
 x86_64-w64-mingw32-gcc main.c -o physic.exe -lm -static
 ```
+
+### Python version
+Run the Python calculator with:
+
+```bash
+python3 python_version/main.py
+```
+
+## Notes
+
+- The Python version includes extra physics options beyond the original C menu.
+- Both implementations are command-line applications.
 
 ## Releases
 Prebuilt versions are available in the project releases.
