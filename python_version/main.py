@@ -15,9 +15,12 @@ print("7. Gravity Force:  F = m * g")
 print("8. Archimedes' Force:  F = ρ * V * g")
 print("9. Newton's Second Law:  F = m * a")
 print("10. Acceleration:  a = (v - u) / t")
-print("11. Exit")
+print("11. Impulse body:  J = Δp = m * Δv")
+print("12. Moment of force:  M = F * d")
+print("13. Exit")
+print("================")
 
-choice = int(input("Enter your choice (1-11): "))
+choice = int(input("Enter your choice (1-13): "))
 
 if choice == 1:
     m = float(input("Enter mass (in kg): "))
@@ -72,6 +75,17 @@ elif choice == 10:
     a = (v - u) / t
     print(f"Acceleration (a) = {a} m/s²")
 elif choice == 11:
+    m = float(input("Enter mass (in kg): "))
+    v = float(input("Enter final velocity (in m/s): "))
+    u = float(input("Enter initial velocity (in m/s): "))
+    J = m * (v - u)
+    print(f"Impulse (J) = {J} N·s")
+elif choice == 12:
+    F = float(input("Enter force (in Newtons): "))
+    d = float(input("Enter perpendicular distance (in meters): "))
+    M = F * d
+    print(f"Moment of force (M) = {M} N·m")
+elif choice == 13:
     print("Exiting the program.")
 else:
-    print("Invalid choice. Please select a number between 1 and 11.")  
+    print("Invalid choice. Please select a number between 1 and 13.")  
