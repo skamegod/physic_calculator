@@ -1,25 +1,37 @@
-# physic_calculator (cli)
-Калькулятор для вычисления по формулам
-## Список поддерживаемых формул
-Программа выполняет расчеты по следующим физическим законам:
+# Physic Calculator (CLI)
 
-1.  **Энергия покоя (Эйнштейн):** $E = mc^2$
-2.  **Закон Ома:** $I = U / R$
-3.  **Закон Кулона:** $F = k_e \cdot \frac{|q_1 \cdot q_2|}{r^2}$
-4.  **Закон всемирного тяготения:** $F = G \cdot \frac{m_1 \cdot m_2}{r^2}$
-5.  **Давление:** $P = F / S$
-6.  **Плотность вещества:** $\rho = m / V$
-7.  **Сила тяжести:** $F = m \cdot g$
-8.  **Архимедова сила:** $F_a = \rho \cdot g \cdot V$
-9.  **II закон Ньютона:** $F = m \cdot a$
-10. **Ускорение:** $a = \frac{v - v_0}{t}$
+A simple command-line physics calculator that computes common physics formulas.
 
-## Для сборки:
-Windows: x86_64-w64-mingw32-gcc main.c -o physic.exe -lm -static
+## Supported formulas
+This program can calculate values for the following physics equations:
 
-Linux(Наличие gcc и make):
-```
+1.  **Rest energy (Einstein):** E = mc²
+2.  **Ohm's law:** I = U / R
+3.  **Coulomb's law:** F = kₑ · |q₁ · q₂| / r²
+4.  **Newton's law of universal gravitation:** F = G · m₁ · m₂ / r²
+5.  **Pressure:** P = F / S
+6.  **Density:** ρ = m / V
+7.  **Weight (gravitational force):** F = m · g
+8.  **Archimedes' force:** Fₐ = ρ · g · V
+9.  **Newton's second law:** F = m · a
+10. **Acceleration:** a = (v - v₀) / t
+
+## Build and run
+
+### Linux
+Make sure `gcc` and `make` are installed, then run:
+
+```bash
 make
 ./physic
 ```
-## ГОТОВЫЕ ВЕРСИИ ЛЕЖАТ В РЕЛИЗАХ
+
+### Windows
+Use the MinGW compiler to build the executable:
+
+```bash
+x86_64-w64-mingw32-gcc main.c -o physic.exe -lm -static
+```
+
+## Releases
+Prebuilt versions are available in the project releases.
