@@ -1,8 +1,10 @@
 import math
+import physic
 speed_light = 299792458  # Speed of light in meters per second
 k_e = 8.9875517873681764e9  # Coulomb's constant in N·m²/C²
 g = 9.80665  # Acceleration due to gravity in m/s²
 g_e = 9.81  # Standard gravity in m/s²
+G = 6.67430e-11  # Gravitational constant in N·m²/kg²
 
 print("==== Menu ====")
 print("1. Formula Epstein's mass-energy equivalence: E = mc²")
@@ -41,7 +43,6 @@ elif choice == 4:
     m1 = float(input("Enter mass 1 (in kg): "))
     m2 = float(input("Enter mass 2 (in kg): "))
     r = float(input("Enter distance between masses (in meters): "))
-    G = 6.67430e-11  # Gravitational constant in N·m²/kg²
     F = G * (m1 * m2) / r ** 2
     print(f"Gravitational Force (F) = {F} Newtons")
 elif choice == 5:
