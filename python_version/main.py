@@ -1,26 +1,27 @@
 import math
-import physic
+#import physic
 speed_light = 299792458  # Speed of light in meters per second
 k_e = 8.9875517873681764e9  # Coulomb's constant in N·m²/C²
 g = 9.80665  # Acceleration due to gravity in m/s²
 g_e = 9.81  # Standard gravity in m/s²
 G = 6.67430e-11  # Gravitational constant in N·m²/kg²
 
-print("==== Menu ====")
-print("1. Formula Epstein's mass-energy equivalence: E = mc²")
-print("2. Ohm's Law: V = IR")
-print("3. Law Kulomb's: F = k_e * (q1 * q2) / r²")
-print("4. Law of Universal Gravitation: F = G * (m1 * m2) / r²")
-print("5. Pressure:  P = F / S")
-print("6. Density:  ρ = m / V")
-print("7. Gravity Force:  F = m * g")
-print("8. Archimedes' Force:  F = ρ * V * g")
-print("9. Newton's Second Law:  F = m * a")
-print("10. Acceleration:  a = (v - u) / t")
-print("11. Impulse body:  J = Δp = m * Δv")
-print("12. Moment of force:  M = F * d")
-print("13. Exit")
-print("================")
+### меню, какие формулы есть.
+print(''' "==== Menu ===="
+1. Formula Epstein's mass-energy equivalence: E = mc²
+2. Ohm's Law: V = IR
+3. Law Kulomb's: F = k_e * (q1 * q2) / r²"
+4. Law of Universal Gravitation: F = G * (m1 * m2) / r²"
+5. Pressure:  P = F / S"
+6. Density:  ρ = m / V"
+7. Gravity Force:  F = m * g"
+8. Archimedes' Force:  F = ρ * V * g"
+9. Newton's Second Law:  F = m * a"
+10. Acceleration:  a = (v - u) / t"
+11. Impulse body:  J = Δp = m * Δv"
+12. Moment of force:  M = F * d"
+13. Exit"
+================ ''')
 
 choice = int(input("Enter your choice (1-13): "))
 
